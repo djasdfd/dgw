@@ -1,0 +1,355 @@
+---------------------------------------------------------------
+[ 2019-06-11T17:24:06+08:00 ] 121.236.145.229 POST dgw.wh68.wanheweb.com/workType/1
+[运行时间：0.054882s] [吞吐率：18.22req/s] [内存消耗：3,455.02kb] [文件加载：134]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002466s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Work',
+    2 => 'getWorkType',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dagongwang.natapp1.cc/html/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15602138107508179 webdebugger port/22407',
+  'openid' => 'ougGT5-yamBT57-ohKvZUZuu0MCg',
+  'origin' => 'http://dagongwang.natapp1.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'dgw.wh68.wanheweb.com',
+)
+[ info ] [ PARAM ] array (
+  'auth' => '1',
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001164s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000307s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\WorkController->getWorkType[ /home/dagongwang/app/api/controller/WorkController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000553s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001290s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`picture` FROM `cherry_type` WHERE  `type` = 1  AND `status` = 1 [ RunTime:0.000392s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 4,
+  'extra' => '',
+) ]
+---------------------------------------------------------------
+[ 2019-06-11T17:24:06+08:00 ] 121.236.145.229 OPTIONS dgw.wh68.wanheweb.com/recommendWork
+[运行时间：0.035914s] [吞吐率：27.84req/s] [内存消耗：2,200.02kb] [文件加载：113]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002330s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Work',
+    2 => 'recommendWork',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dagongwang.natapp1.cc/html/index.html',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'openid',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15602138107508179 webdebugger port/22407',
+  'origin' => 'http://dagongwang.natapp1.cc',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001106s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000282s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T17:24:06+08:00 ] 121.236.145.229 OPTIONS dgw.wh68.wanheweb.com/workList
+[运行时间：0.033910s] [吞吐率：29.49req/s] [内存消耗：2,199.99kb] [文件加载：113]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002214s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Work',
+    2 => 'getWork',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dagongwang.natapp1.cc/html/index.html',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'openid',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15602138107508179 webdebugger port/22407',
+  'origin' => 'http://dagongwang.natapp1.cc',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001114s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000287s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T17:24:06+08:00 ] 121.236.145.229 POST dgw.wh68.wanheweb.com/recommendWork
+[运行时间：0.054742s] [吞吐率：18.27req/s] [内存消耗：3,447.73kb] [文件加载：133]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002480s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Work',
+    2 => 'recommendWork',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dagongwang.natapp1.cc/html/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15602138107508179 webdebugger port/22407',
+  'openid' => 'ougGT5-yamBT57-ohKvZUZuu0MCg',
+  'origin' => 'http://dagongwang.natapp1.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '21',
+  'connection' => 'keep-alive',
+  'host' => 'dgw.wh68.wanheweb.com',
+)
+[ info ] [ PARAM ] array (
+  'city' => '861',
+  'top' => '1',
+  'type' => '8',
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001177s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000317s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\WorkController->recommendWork[ /home/dagongwang/app/api/controller/WorkController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_work` [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT `c`.`short_name`,`w`.`supply`,`w`.`base_info`,`w`.`company_id`,`w`.`id`,`w`.`tag` FROM `cherry_work` `w` LEFT JOIN `cherry_company` `c` ON `c`.`id`=`w`.`company_id` WHERE  `is_recommend` = 1  AND `w`.`status` = 1  AND `c`.`city` = '861'  AND `w`.`top` = 1  AND `w`.`type` = '8' LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'c',
+  'type' => 'ref',
+  'possible_keys' => 'PRIMARY,city',
+  'key' => 'city',
+  'key_len' => '2',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => 'Using where',
+) ]
+---------------------------------------------------------------
+[ 2019-06-11T17:24:06+08:00 ] 121.236.145.229 POST dgw.wh68.wanheweb.com/workList
+[运行时间：0.052907s] [吞吐率：18.90req/s] [内存消耗：3,459.10kb] [文件加载：135]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002381s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Work',
+    2 => 'getWork',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dagongwang.natapp1.cc/html/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15602138107508179 webdebugger port/22407',
+  'openid' => 'ougGT5-yamBT57-ohKvZUZuu0MCg',
+  'origin' => 'http://dagongwang.natapp1.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '36',
+  'connection' => 'keep-alive',
+  'host' => 'dgw.wh68.wanheweb.com',
+)
+[ info ] [ PARAM ] array (
+  'city' => '861',
+  'top' => '1',
+  'type' => '8',
+  'page' => '1',
+  'limit' => '6',
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001156s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000289s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\WorkController->getWork[ /home/dagongwang/app/api/controller/WorkController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000410s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_work` [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_work` `w` LEFT JOIN `cherry_company` `c` ON `c`.`id`=`w`.`company_id` WHERE  `w`.`status` = 1  AND `c`.`city` = '861'  AND `w`.`top` = 1  AND `w`.`type` = '8' LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'c',
+  'type' => 'ref',
+  'possible_keys' => 'PRIMARY,city',
+  'key' => 'city',
+  'key_len' => '2',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => 'Using where; Using index',
+) ]
+[ sql ] [ SQL ] SELECT `c`.`short_name`,`w`.`supply`,`w`.`base_info`,`w`.`company_id`,`w`.`id`,`w`.`tag` FROM `cherry_work` `w` LEFT JOIN `cherry_company` `c` ON `c`.`id`=`w`.`company_id` WHERE  `w`.`status` = 1  AND `c`.`city` = '861'  AND `w`.`top` = 1  AND `w`.`type` = '8' LIMIT 0,6 [ RunTime:0.000273s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'c',
+  'type' => 'ref',
+  'possible_keys' => 'PRIMARY,city',
+  'key' => 'city',
+  'key_len' => '2',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => 'Using where',
+) ]
+---------------------------------------------------------------
+[ 2019-06-11T17:24:10+08:00 ] 121.236.145.229 OPTIONS dgw.wh68.wanheweb.com/search
+[运行时间：0.038149s] [吞吐率：26.21req/s] [内存消耗：2,252.42kb] [文件加载：113]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002465s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Account',
+    2 => 'searchWork',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dagongwang.natapp1.cc/html/indexdetermine.html',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'openid',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15602138107508179 webdebugger port/22407',
+  'origin' => 'http://dagongwang.natapp1.cc',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001174s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000307s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-11T17:24:10+08:00 ] 121.236.145.229 POST dgw.wh68.wanheweb.com/search
+[运行时间：0.054661s] [吞吐率：18.29req/s] [内存消耗：3,524.88kb] [文件加载：135]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002450s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Account',
+    2 => 'searchWork',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://dagongwang.natapp1.cc/html/indexdetermine.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2 like Mac OS X) AppleWebKit/602.3.12 (KHTML, like Gecko) Mobile/14C92 Safari/601.1 wechatdevtools/1.02.1809260 MicroMessenger/6.5.7 Language/zh_CN webview/15602138107508179 webdebugger port/22407',
+  'openid' => 'ougGT5-yamBT57-ohKvZUZuu0MCg',
+  'origin' => 'http://dagongwang.natapp1.cc',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '21',
+  'connection' => 'keep-alive',
+  'host' => 'dgw.wh68.wanheweb.com',
+)
+[ info ] [ PARAM ] array (
+  'city' => '',
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001168s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000307s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\AccountController->searchWork[ /home/dagongwang/app/api/controller/AccountController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000415s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_account` [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cherry_account` WHERE  `openid` = 'ougGT5-yamBT57-ohKvZUZuu0MCg' LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_account',
+  'type' => 'const',
+  'possible_keys' => 'open',
+  'key' => 'open',
+  'key_len' => '152',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]

@@ -1,0 +1,3640 @@
+---------------------------------------------------------------
+[ 2019-05-09T23:48:27+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.059849s] [吞吐率：16.71req/s] [内存消耗：3,137.97kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002444s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001150s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000313s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000300s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:48:29+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.058014s] [吞吐率：17.24req/s] [内存消耗：3,138.03kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002466s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001091s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000305s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000516s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000304s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:48:30+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052248s] [吞吐率：19.14req/s] [内存消耗：2,951.85kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002460s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001095s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:48:31+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.059249s] [吞吐率：16.88req/s] [内存消耗：3,138.03kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002460s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001100s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000516s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000318s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:48:37+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.057835s] [吞吐率：17.29req/s] [内存消耗：3,138.24kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002454s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001088s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000306s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000550s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001118s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000239s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:48:40+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.058650s] [吞吐率：17.05req/s] [内存消耗：3,138.03kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002467s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001086s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000305s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000526s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001265s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000270s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:48:42+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052613s] [吞吐率：19.01req/s] [内存消耗：2,951.85kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002468s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001096s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000299s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:48:43+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.055844s] [吞吐率：17.91req/s] [内存消耗：3,138.03kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002332s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001087s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000610s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001350s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000183s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:48:47+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052413s] [吞吐率：19.08req/s] [内存消耗：2,951.85kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002476s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001094s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000306s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:48:48+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052309s] [吞吐率：19.12req/s] [内存消耗：2,951.85kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002464s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001088s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000307s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:49:16+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/index/index.html
+[运行时间：0.071184s] [吞吐率：14.05req/s] [内存消耗：4,041.84kb] [文件加载：138]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002483s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001350s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000388s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001358s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ /home/dagongwang/app/admin/controller/IndexController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/index/index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001261s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_admin_menu` [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.000395s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_admin_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 153,
+  'extra' => 'Using filesort',
+) ]
+[ warn ] SQL:SELECT * FROM `cherry_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC[Using filesort]
+---------------------------------------------------------------
+[ 2019-05-09T23:49:16+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/main/index.html
+[运行时间：0.062638s] [吞吐率：15.96req/s] [内存消耗：3,523.72kb] [文件加载：136]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002331s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001113s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000284s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001237s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\MainController->index[ /home/dagongwang/app/admin/controller/MainController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/main/index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001267s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_option` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:49:16+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052135s] [吞吐率：19.18req/s] [内存消耗：2,951.88kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002463s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001087s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000306s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:49:18+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.058569s] [吞吐率：17.07req/s] [内存消耗：3,138.06kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002465s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001093s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000299s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000476s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001351s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000247s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:53:23+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052119s] [吞吐率：19.19req/s] [内存消耗：2,951.88kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002439s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001088s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000298s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:53:24+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052616s] [吞吐率：19.01req/s] [内存消耗：2,951.88kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002478s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001109s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000300s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:53:25+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.057473s] [吞吐率：17.40req/s] [内存消耗：3,138.06kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002454s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001091s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000483s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001036s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000206s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:53:26+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052094s] [吞吐率：19.20req/s] [内存消耗：2,951.88kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002455s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001088s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:53:27+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/index/index.html
+[运行时间：0.071931s] [吞吐率：13.90req/s] [内存消耗：4,041.84kb] [文件加载：138]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002478s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001097s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000307s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001306s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ /home/dagongwang/app/admin/controller/IndexController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/index/index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001513s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_admin_menu` [ RunTime:0.001198s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.000479s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_admin_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 153,
+  'extra' => 'Using filesort',
+) ]
+[ warn ] SQL:SELECT * FROM `cherry_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC[Using filesort]
+---------------------------------------------------------------
+[ 2019-05-09T23:53:27+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/main/index.html
+[运行时间：0.066230s] [吞吐率：15.10req/s] [内存消耗：3,523.72kb] [文件加载：136]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002463s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001089s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000308s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001288s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\MainController->index[ /home/dagongwang/app/admin/controller/MainController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/main/index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001407s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_option` [ RunTime:0.001184s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:53:27+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052726s] [吞吐率：18.97req/s] [内存消耗：2,951.88kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002479s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001096s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000306s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:53:27+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/favicon.ico
+[运行时间：0.037271s] [吞吐率：26.83req/s] [内存消耗：2,108.35kb] [文件加载：110]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002201s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'image/webp,*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001028s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:53:29+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052670s] [吞吐率：18.99req/s] [内存消耗：2,951.88kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002474s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001103s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000309s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:53:31+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052537s] [吞吐率：19.03req/s] [内存消耗：2,951.88kb] [文件加载：122]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002535s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001088s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000303s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-09T23:53:55+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.053267s] [吞吐率：18.77req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002448s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001085s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:53:56+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.058036s] [吞吐率：17.23req/s] [内存消耗：3,138.08kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002509s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001093s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000304s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000520s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001077s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000199s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:53:57+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.053141s] [吞吐率：18.82req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002450s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001086s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:53:58+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.059115s] [吞吐率：16.92req/s] [内存消耗：3,138.08kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002475s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001095s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000306s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000489s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001374s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000320s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:53:59+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.053246s] [吞吐率：18.78req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002455s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001090s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:01+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.058759s] [吞吐率：17.02req/s] [内存消耗：3,138.08kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002458s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001088s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000298s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001286s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000263s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:01+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.053447s] [吞吐率：18.71req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002465s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001093s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000300s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:02+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.058924s] [吞吐率：16.97req/s] [内存消耗：3,138.08kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002455s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001112s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000591s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000372s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:02+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.053705s] [吞吐率：18.62req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002448s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001092s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000299s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:02+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.058786s] [吞吐率：17.01req/s] [内存消耗：3,138.08kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002458s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001089s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000298s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001325s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000296s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:22+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.058965s] [吞吐率：16.96req/s] [内存消耗：3,138.08kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002473s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001099s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000308s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000345s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:23+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.054859s] [吞吐率：18.23req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002469s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001166s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000315s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:24+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.058761s] [吞吐率：17.02req/s] [内存消耗：3,138.08kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002457s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001087s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000303s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001306s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000251s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:24+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.050893s] [吞吐率：19.65req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002327s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001090s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000282s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:25+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.057054s] [吞吐率：17.53req/s] [内存消耗：3,138.08kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002321s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001085s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000298s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000521s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001251s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000317s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:25+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.053499s] [吞吐率：18.69req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002472s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001098s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000307s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:28+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/rbac/index.html
+[运行时间：0.062633s] [吞吐率：15.97req/s] [内存消耗：3,513.94kb] [文件加载：136]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002330s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rbac',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001087s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000285s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001231s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\RbacController->index[ /home/dagongwang/app/admin/controller/RbacController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/rbac/index.html [ array (
+  0 => 'admin',
+  1 => 'roles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000596s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001463s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_role` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_role` ORDER BY `list_order` ASC,`id` DESC [ RunTime:0.000340s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_role',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 3,
+  'extra' => 'Using filesort',
+) ]
+[ warn ] SQL:SELECT * FROM `cherry_role` ORDER BY `list_order` ASC,`id` DESC[Using filesort]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:30+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/mailer/index.html
+[运行时间：0.065218s] [吞吐率：15.33req/s] [内存消耗：3,495.07kb] [文件加载：136]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002462s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mailer',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001091s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000299s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001287s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\MailerController->index[ /home/dagongwang/app/admin/controller/MailerController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/mailer/index.html [ array (
+  0 => 'admin',
+  1 => '',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000553s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001520s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_option` [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:31+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/mailer/index.html
+[运行时间：0.061642s] [吞吐率：16.22req/s] [内存消耗：3,495.07kb] [文件加载：136]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002362s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mailer',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001048s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000295s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001230s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\MailerController->index[ /home/dagongwang/app/admin/controller/MailerController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/mailer/index.html [ array (
+  0 => 'admin',
+  1 => '',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000467s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001276s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_option` [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:32+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/theme/index.html
+[运行时间：0.068714s] [吞吐率：14.55req/s] [内存消耗：3,943.91kb] [文件加载：139]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002463s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'theme',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001088s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000299s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001308s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\ThemeController->index[ /home/dagongwang/app/admin/controller/ThemeController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/theme/index.html [ array (
+  0 => 'admin',
+  1 => 'themes',
+  2 => 'default_theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001150s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_theme` [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_theme` [ RunTime:0.000284s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_theme',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 1,
+  'extra' => '',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:32+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/nav/index.html
+[运行时间：0.066521s] [吞吐率：15.03req/s] [内存消耗：3,803.34kb] [文件加载：139]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002392s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001099s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000301s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001266s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\NavController->index[ /home/dagongwang/app/admin/controller/NavController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/nav/index.html [ array (
+  0 => 'admin',
+  1 => 'navs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000519s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_nav` [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_nav` [ RunTime:0.000192s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_nav',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 2,
+  'extra' => '',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:33+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/slide/index.html
+[运行时间：0.071168s] [吞吐率：14.05req/s] [内存消耗：3,796.06kb] [文件加载：139]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002459s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'slide',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001122s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000300s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001300s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\SlideController->index[ /home/dagongwang/app/admin/controller/SlideController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/slide/index.html [ array (
+  0 => 'admin',
+  1 => 'slides',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000485s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001195s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_slide` [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_slide` WHERE  `delete_time` = 0 [ RunTime:0.000233s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_slide',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 1,
+  'extra' => 'Using where',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:33+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/route/index.html
+[运行时间：0.069982s] [吞吐率：14.29req/s] [内存消耗：3,844.41kb] [文件加载：141]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002481s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'route',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001127s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000300s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001308s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\RouteController->index[ /home/dagongwang/app/admin/controller/RouteController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/route/index.html [ array (
+  0 => 'admin',
+  1 => 'routes',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000517s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001220s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_route` [ RunTime:0.001248s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_route` ORDER BY `list_order` ASC [ RunTime:0.000285s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_route',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 1,
+  'extra' => 'Using filesort',
+) ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_route` WHERE  `status` = 1 ORDER BY `list_order` ASC [ RunTime:0.000222s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_route',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 1,
+  'extra' => 'Using where; Using filesort',
+) ]
+[ warn ] SQL:SELECT * FROM `cherry_route` ORDER BY `list_order` ASC[Using filesort]
+[ warn ] SQL:SELECT * FROM `cherry_route` WHERE  `status` = :where_AND_status ORDER BY `list_order` ASC[Using where; Using filesort]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:34+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/setting/upload.html
+[运行时间：0.064209s] [吞吐率：15.57req/s] [内存消耗：3,515.90kb] [文件加载：136]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002466s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'setting',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001108s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000302s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001318s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\SettingController->upload[ /home/dagongwang/app/admin/controller/SettingController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/setting/upload.html [ array (
+  0 => 'admin',
+  1 => 'upload_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000577s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001154s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_option` [ RunTime:0.000853s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'upload_setting' LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:34+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/storage/index.html
+[运行时间：0.063655s] [吞吐率：15.71req/s] [内存消耗：3,472.07kb] [文件加载：136]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002477s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'storage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001090s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000307s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001287s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\StorageController->index[ /home/dagongwang/app/admin/controller/StorageController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/storage/index.html [ array (
+  0 => 'admin',
+  1 => 'type',
+  2 => 'storages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000526s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001204s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_option` [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:35+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/storage/index.html
+[运行时间：0.064680s] [吞吐率：15.46req/s] [内存消耗：3,472.07kb] [文件加载：136]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002458s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'storage',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001116s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000298s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001297s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\StorageController->index[ /home/dagongwang/app/admin/controller/StorageController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/storage/index.html [ array (
+  0 => 'admin',
+  1 => 'type',
+  2 => 'storages',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000559s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_option` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'storage' LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:38+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/rbac/index.html
+[运行时间：0.065289s] [吞吐率：15.32req/s] [内存消耗：3,513.94kb] [文件加载：136]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002470s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rbac',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001089s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000300s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001299s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\RbacController->index[ /home/dagongwang/app/admin/controller/RbacController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/rbac/index.html [ array (
+  0 => 'admin',
+  1 => 'roles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000572s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001504s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_role` [ RunTime:0.001106s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_role` ORDER BY `list_order` ASC,`id` DESC [ RunTime:0.000218s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_role',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 3,
+  'extra' => 'Using filesort',
+) ]
+[ warn ] SQL:SELECT * FROM `cherry_role` ORDER BY `list_order` ASC,`id` DESC[Using filesort]
+---------------------------------------------------------------
+[ 2019-05-09T23:54:47+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.053899s] [吞吐率：18.55req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002471s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001092s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000299s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:55:30+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/index/index.html
+[运行时间：0.070455s] [吞吐率：14.19req/s] [内存消耗：4,041.84kb] [文件加载：138]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002520s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001093s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000298s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001308s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\IndexController->index[ /home/dagongwang/app/admin/controller/IndexController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/index/index.html [ array (
+  0 => 'admin',
+  1 => 'menus',
+  2 => 'menus_js_var',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000606s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001333s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_admin_menu` [ RunTime:0.001103s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC [ RunTime:0.000400s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_admin_menu',
+  'type' => 'ALL',
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => 153,
+  'extra' => 'Using filesort',
+) ]
+[ warn ] SQL:SELECT * FROM `cherry_admin_menu` ORDER BY `app` ASC,`controller` ASC,`action` ASC[Using filesort]
+---------------------------------------------------------------
+[ 2019-05-09T23:55:30+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/admin/main/index.html
+[运行时间：0.066087s] [吞吐率：15.13req/s] [内存消耗：3,523.72kb] [文件加载：136]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002456s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001094s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000300s ]
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/admin.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/user/lang/zh-cn/admin_menu.php
+[ info ] [ LANG ] /home/dagongwang/public/../data/lang/zh-cn/admin_menu.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\AdminLangBehavior @admin_init [ RunTime:0.001301s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\MainController->index[ /home/dagongwang/app/admin/controller/MainController.php ]
+[ info ] [ VIEW ] /home/dagongwang/public/themes/admin_simpleboot3/admin/main/index.html [ array (
+  0 => 'admin',
+  1 => 'dashboard_widgets',
+  2 => 'dashboard_widget_plugins',
+  3 => 'has_smtp_setting',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000522s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_user` [ RunTime:0.001423s ]
+[ sql ] [ SQL ] SELECT * FROM `cherry_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_user',
+  'type' => 'const',
+  'possible_keys' => 'PRIMARY',
+  'key' => 'PRIMARY',
+  'key_len' => '8',
+  'ref' => 'const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_option` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'admin_dashboard_widgets' LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+[ sql ] [ SQL ] SELECT `option_value` FROM `cherry_option` WHERE  `option_name` = 'smtp_setting' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => NULL,
+  'type' => NULL,
+  'possible_keys' => NULL,
+  'key' => NULL,
+  'key_len' => NULL,
+  'ref' => NULL,
+  'rows' => NULL,
+  'extra' => 'Impossible WHERE noticed after reading const tables',
+) ]
+---------------------------------------------------------------
+[ 2019-05-09T23:55:31+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.053795s] [吞吐率：18.59req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002464s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001108s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000300s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:55:32+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.050942s] [吞吐率：19.63req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002325s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001090s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000283s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:55:33+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.053317s] [吞吐率：18.76req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002450s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001088s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:55:45+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.052731s] [吞吐率：18.96req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002380s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001087s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000299s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
+---------------------------------------------------------------
+[ 2019-05-09T23:55:46+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/tag.html
+[运行时间：0.059028s] [吞吐率：16.94req/s] [内存消耗：3,138.08kb] [文件加载：128]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002477s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'tag',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001096s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000297s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->tag[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000616s ] mysql:host=127.0.0.1;port=3306;dbname=dgw_wh68_wanhewe;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cherry_type` [ RunTime:0.001314s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => 'Using index',
+) ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cherry_type` WHERE  `status` = 1  AND `type` = 0 LIMIT 0,10 [ RunTime:0.000356s ]
+[ sql ] [ EXPLAIN : array (
+  'id' => 1,
+  'select_type' => 'SIMPLE',
+  'table' => 'cherry_type',
+  'type' => 'ref',
+  'possible_keys' => 'typestatus',
+  'key' => 'typestatus',
+  'key_len' => '2',
+  'ref' => 'const,const',
+  'rows' => 1,
+  'extra' => '',
+) ]
+[ error ] [0]致命错误: Call to a member function display() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:134]
+---------------------------------------------------------------
+[ 2019-05-09T23:55:47+08:00 ] 121.227.195.163 GET dgw.wh68.wanheweb.com/company/company/lists.html
+[运行时间：0.053309s] [吞吐率：18.76req/s] [内存消耗：3,010.11kb] [文件加载：124]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.002471s ]
+[ info ] [ LANG ] /home/dagongwang/simplewind/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'company',
+    1 => 'company',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1557213493,1557215409,1557295154; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1557295209; PHPSESSID=vg870ebmah7pl5pthc1rh99fdr; keeplogin=1%7C86400%7C1557425764%7C1931e4858bef906a200b1304537b3ba5; thinkphp_show_page_trace=0|0; admin_username=cherry',
+  'connection' => 'keep-alive',
+  'referer' => 'http://dgw.wh68.wanheweb.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0',
+  'host' => 'dgw.wh68.wanheweb.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/dagongwang/simplewind/cmf/behavior/../lang/zh-cn.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/admin/lang/zh-cn/common.php
+[ info ] [ LANG ] /home/dagongwang/public/../app/portal/lang/zh-cn/common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001100s ]
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitAppHookBehavior @module_init [ RunTime:0.000307s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\company\controller\CompanyController->lists[ /home/dagongwang/app/company/controller/CompanyController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function fetch() on null[/home/dagongwang/simplewind/thinkphp/library/think/Controller.php:120]
